@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="shortcut icon" href="#">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.3-web/css/all.css" />
+    <link rel="stylesheet" href="./assets/css/main.css">
+</head>
+<body>
+<div class="player">
+  <div class="app">
+    <!-- Dashboard -->
+    <div class="dashboard">
+      <!-- Header -->
+      <header>
+        <h4>Now playing:</h4>
+        <h2>String 57th & 9th</h2>
+      </header>
+      
+      <!-- CD -->
+      <div class="cd">
+        <div class="cd-thumb" style="background-image: url('')">
+        </div>
+      </div>
+      <div class="dark-mode">
+        <div class="dark-mode__content">Chill</div>  
+        <input id="progressDark" class="progressDark" type="checkbox">
+      </div>
+      <div class="btn btn-volume">
+        <div class="btn btn-volume-up">
+          <i class="fas fa-volume-up"></i>
+        </div>
+        <div class="btn-volume-mute hiden">
+          <i class="fas fa-volume-mute"></i>
+        </div>
+        <input id="progressVolume" class="progressVolume hiden" type="range" value="0" min="0" max="100">
+      </div>
+      <!-- Control -->
+      <div class="control ">
+        <div class="btn btn-repeat">
+          <i class="fas fa-redo"></i>
+        </div>
+        <div class="btn btn-prev">
+          <i class="fas fa-step-backward"></i>
+        </div>
+        <div class="btn btn-toggle-play">
+          <i class="fas fa-pause icon-pause"></i>
+          <i style="margin-left: 8px;" class="fas fa-play icon-play"></i>
+        </div>
+        <div class="btn btn-next">
+          <i class="fas fa-step-forward"></i>
+        </div>
+        <div class="btn btn-random">
+          <i class="fas fa-random"></i>
+        </div>
+      </div>
+      
+      <input id="progress" class="progress" type="range" value="0" min="0" max="100">
+      <audio id="audio" src="./assets/mussic/song1.mp3"></audio>
+    </div>
+    <!-- Playlist -->
+    <div class="playlist">
+      <div class="song">
+        <div class="thumb" style="background-image: url('https://i.ytimg.com/vi/jTLhQf5KJSc/maxresdefault.jpg')">
+        </div>
+        <div class="body">
+          <h3 class="title">Music name</h3>
+          <p class="author">Singer</p>
+        </div>
+        <div class="option">
+          <i class="fas fa-ellipsis-h"></i>
+          <ul class="option_list hiden">
+            <li class="option_list-choose btn-delete">Xóa</li>
+            <li class="option_list-choose btn-prioritize">Ưu tiên</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script src="./assets/js/main.js"></script>
+<!-- Design from: https://static.collectui.com/shots/3671744/musicloud-revolutionary-app-for-music-streaming-large -->
+</body>
+</html>
