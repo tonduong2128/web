@@ -162,7 +162,7 @@ const app={
         let browserHeight=$('.player').offsetHeight;
         // xử lý khi kéo thanh chứa nhạc
         playList.onscroll=function(){
-            const scrollTop=playList.scrollTop;
+            const scrollTop=playList.scrollTop/4;
             const newCdWidth=cdWidth - scrollTop;
             cd.style.width=newCdWidth > 0 ? newCdWidth +'px':'0px';
             playList.style.height=browserHeight-cd.offsetWidth + 'px';
